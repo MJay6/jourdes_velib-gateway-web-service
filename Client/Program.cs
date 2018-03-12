@@ -23,7 +23,7 @@ namespace Client
                     break;
                 }
                 Service intermediaryWebService = new Service();
-                Console.Write(intermediaryWebService.GetInfoAbout(input));
+                Console.Write(intermediaryWebService.GetCities());
             }
             
         }

@@ -47,6 +47,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contract.cs" />
     <Compile Include="Station.cs" />
     <Compile Include="IService.cs" />
     <Compile Include="example\IService1.cs" />

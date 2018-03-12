@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ServiceModel;
 
 namespace IWS_VelibWS
@@ -7,6 +8,12 @@ namespace IWS_VelibWS
     public interface IService
     {
         [OperationContract]
-        String GetInfoAbout(string station);
+        string GetInfoAbout(string station, string cityName);
+
+        [OperationContract]
+        List<string> GetCities();
+
+        [OperationContract]
+        List<string> GetStations(string cityName);
     }
 }
