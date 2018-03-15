@@ -1,6 +1,6 @@
-﻿using IWS_VelibWS;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
+using ClientGUI.ServiceReference;
 
 namespace ClientGUI
 {
@@ -9,7 +9,7 @@ namespace ClientGUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        Service intermediaryWebService = new Service();
+        ServiceClient intermediaryWebService = new ServiceClient();
 
         public MainWindow()
         {

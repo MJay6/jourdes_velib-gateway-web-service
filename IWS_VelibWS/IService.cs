@@ -15,5 +15,8 @@ namespace IWS_VelibWS
 
         [OperationContract]
         List<string> GetStations(string cityName);
+
+        [OperationContract]
+        void RefreshStations(string cityName);
     }
 }
