@@ -1,18 +1,6 @@
 ﻿using IWS_VelibWS;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ClientGUI
 {
@@ -50,6 +38,7 @@ namespace ClientGUI
             {
                 return;
             }
+            intermediaryWebService.RefreshStations(CitySelection.SelectedItem.ToString().Split(',')[0]);
             StationName.Content = e.AddedItems[0].ToString().Split('\n')[0];
             StationDetails.Text = intermediaryWebService.GetInfoAbout(e.AddedItems[0].ToString().Split('\n')[0], CitySelection.SelectedItem.ToString().Split(',')[0]);
         }
