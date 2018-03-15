@@ -37,7 +37,8 @@ namespace IWS_VelibWS
         public string GetInfoAbout(string stationName, string cityName)
         {
             StringBuilder output = new StringBuilder();
-            
+            RefreshStations(cityName);
+
             foreach (Station station in stations)
             {
                 if (station.name.Contains(stationName))

@@ -1,0 +1,7 @@
+C:\Users\Marc\source\repos\IWSLibrarySoap\ClientConsole\obj\Debug\ClientConsole.csprojResolveAssemblyReference.cache
+C:\Users\Marc\source\repos\IWSLibrarySoap\ClientConsole\obj\Debug\ClientConsole.csproj.CoreCompileInputs.cache
+C:\Users\Marc\source\repos\IWSLibrarySoap\ClientConsole\bin\Debug\ClientConsole.exe.config
+C:\Users\Marc\source\repos\IWSLibrarySoap\ClientConsole\bin\Debug\ClientConsole.exe
+C:\Users\Marc\source\repos\IWSLibrarySoap\ClientConsole\bin\Debug\ClientConsole.pdb
+C:\Users\Marc\source\repos\IWSLibrarySoap\ClientConsole\obj\Debug\ClientConsole.exe
+C:\Users\Marc\source\repos\IWSLibrarySoap\ClientConsole\obj\Debug\ClientConsole.pdb
