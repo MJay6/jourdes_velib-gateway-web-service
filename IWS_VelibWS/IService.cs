@@ -11,12 +11,13 @@ namespace IWS_VelibWS
         string GetInfoAbout(string station, string cityName);
 
         [OperationContract]
-        List<string> GetCities();
+        Contract[] GetCities();
 
         [OperationContract]
-        List<string> GetStations(string cityName);
+        Station[] GetStations(string cityName);
 
         [OperationContract]
         void RefreshStations(string cityName);
+
     }
 }

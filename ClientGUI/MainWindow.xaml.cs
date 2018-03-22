@@ -14,10 +14,9 @@ namespace ClientGUI
         public MainWindow()
         {
             InitializeComponent();
-            
-            foreach (string name in intermediaryWebService.GetCities())
+            foreach (Contract contract in intermediaryWebService.GetCities())
             {
-                CitySelection.Items.Add(name);
+                CitySelection.Items.Add(contract.name + ", " + contract.country_code);
             }
         }
 
@@ -26,9 +25,9 @@ namespace ClientGUI
             StationSelection.Items.Clear();
             StationName.Content = "";
             StationDetails.Text = "Aucune station sélectionnée";
-            foreach (string station in intermediaryWebService.GetStations(e.AddedItems[0].ToString().Split(',')[0]))
+            foreach (Station station in intermediaryWebService.GetStations(e.AddedItems[0].ToString().Split(',')[0]))
             {
-                StationSelection.Items.Add(station);
+                StationSelection.Items.Add(station.name + "\n" + station.address);
             }
         }
 

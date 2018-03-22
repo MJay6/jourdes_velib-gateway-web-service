@@ -18,3 +18,4 @@ C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.csproj.G
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.csproj.CoreCompileInputs.cache
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.exe
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.pdb
+C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.csproj.CopyComplete

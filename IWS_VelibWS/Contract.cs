@@ -1,11 +1,14 @@
-﻿using System;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace IWS_VelibWS
 {
-    class Contract
+    [DataContract]
+    public class Contract
     {
+        [DataMember]
         public string name { get; set;}
+
+        [DataMember]
         public string country_code { get; set; }
     }
 }

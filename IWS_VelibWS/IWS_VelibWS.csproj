@@ -49,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contract.cs" />
+    <Compile Include="IMonitorService.cs" />
+    <Compile Include="MonitorService.cs" />
     <Compile Include="Station.cs" />
     <Compile Include="IService.cs" />
     <Compile Include="example\IService1.cs" />

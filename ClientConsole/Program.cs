@@ -49,16 +49,16 @@ namespace ClientConsole
                 Console.WriteLine("Vous n'avez pas sélectionné de ville");
                 return;
             }
-            string[] stations = intermediaryWebService.GetStations(currentSelectedCity);
-            foreach (string stationName in stations)
+            Station[] stations = intermediaryWebService.GetStations(currentSelectedCity);
+            foreach (Station station in stations)
             {
-                if (stationName.ToLower().Contains(input.ToLower()))
+                if (station.name.ToLower().Contains(input.ToLower()))
                 {
-                    Console.WriteLine(stationName + "\n");
-                    Console.WriteLine(stationName.Split('\n')[0]);
+                    Console.WriteLine(station.name + "\n");
+                    Console.WriteLine(station.name.Split('\n')[0]);
                     Console.WriteLine(currentSelectedCity);
                     Console.ReadLine();
-                    Console.Write(intermediaryWebService.GetInfoAbout(stationName.Split('\n')[0], currentSelectedCity));
+                    Console.Write(intermediaryWebService.GetInfoAbout(station.name.Split('\n')[0], currentSelectedCity));
                     found = true;
                     break;
                 }
@@ -74,14 +74,14 @@ namespace ClientConsole
             ServiceClient intermediaryWebService = new ServiceClient();
             bool found = false;
             string selectedCity = currentSelectedCity;
-            string[] cities = intermediaryWebService.GetCities();
+            Contract[] cities = intermediaryWebService.GetCities();
 
-            foreach (string cityName in cities)
+            foreach (Contract city in cities)
             {
-                if (cityName.ToLower().Contains(input.ToLower()))
+                if (city.name.ToLower().Contains(input.ToLower()))
                 {
-                    Console.WriteLine(cityName + " sélectionné.");
-                    selectedCity = cityName.Split(',')[0];
+                    Console.WriteLine(city.name + " sélectionné.");
+                    selectedCity = city.name.Split(',')[0];
                     found = true;
                     break;
                 }

@@ -1,0 +1,22 @@
+﻿<Window x:Class="MonitorGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MonitorGUI"
+        mc:Ignorable="d"
+        Title="Monitor View" Height="450" Width="800">
+    <Grid>
+        <Label Content="Number of external requests : " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="NbRequests" HorizontalAlignment="Left" Margin="186,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Current cache expiration time : " HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="CurrentCacheExpirationTime" HorizontalAlignment="Left" Margin="191,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CacheExpirationTimeSetter" HorizontalAlignment="Left" Height="23" Margin="10,172,0,0" TextWrapping="Wrap" Text="Enter a number of seconds" VerticalAlignment="Top" Width="202"/>
+        <Label Content="Set cache expiration time : " HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="SetButton" Content="Set" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Margin="217,172,0,0" Click="SetButton_Click"/>
+        <Button x:Name="RefreshButton" Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,72,0,0" Click="RefreshButton_Click"/>
+        <Label Content="Number of cache requests : " HorizontalAlignment="Left" Margin="292,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="NbCacheRequests" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

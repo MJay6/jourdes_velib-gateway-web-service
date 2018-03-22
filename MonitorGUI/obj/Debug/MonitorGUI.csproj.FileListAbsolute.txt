@@ -1,0 +1,15 @@
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\bin\Debug\MonitorGUI.exe.config
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\bin\Debug\MonitorGUI.exe
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\bin\Debug\MonitorGUI.pdb
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MonitorGUI.csprojResolveAssemblyReference.cache
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MainWindow.g.cs
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\App.g.cs
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MonitorGUI_MarkupCompile.cache
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MonitorGUI_MarkupCompile.lref
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MainWindow.baml
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MonitorGUI.g.resources
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MonitorGUI.Properties.Resources.resources
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MonitorGUI.csproj.GenerateResource.cache
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MonitorGUI.csproj.CoreCompileInputs.cache
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MonitorGUI.exe
+C:\Users\Marc\source\repos\IWSLibrarySoap\MonitorGUI\obj\Debug\MonitorGUI.pdb
