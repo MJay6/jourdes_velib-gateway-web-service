@@ -57,7 +57,6 @@ namespace ClientConsole
                     Console.WriteLine(station.name + "\n");
                     Console.WriteLine(station.name.Split('\n')[0]);
                     Console.WriteLine(currentSelectedCity);
-                    Console.ReadLine();
                     Console.Write(intermediaryWebService.GetInfoAbout(station.name.Split('\n')[0], currentSelectedCity));
                     found = true;
                     break;
