@@ -3,9 +3,9 @@ The main idea of this lab is to develop and deploy an intermediary Web service (
 
 # Extensions présentes
 * Minimal release: Intermediary Web Service (IWS_VelibWS), Console Application (ClientConsole)
-* [Graphical User Interface](#-extension:-client-gui-clientgui) (ClientGUI)
-* [Caching](#-extension:-caching)
-* [Monitoring](#-extension:-monitor-gui)
+* [Graphical User Interface](#extension:-client-gui-clientgui) (ClientGUI)
+* [Caching](#extension:-caching)
+* [Monitoring](#extension:-monitor-gui)
 
 ---
 
