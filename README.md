@@ -3,9 +3,9 @@ The main idea of this lab is to develop and deploy an intermediary Web service (
 
 # Extensions présentes
 * Minimal release: Intermediary Web Service (IWS_VelibWS), Console Application (ClientConsole)
-* [Graphical User Interface](##-extension:-client-gui-clientgui) (ClientGUI)
-* [Caching](##-extension:-caching)
-* [Monitoring](##-extension:-monitor-gui)
+* [Graphical User Interface](#-extension:-client-gui-clientgui) (ClientGUI)
+* [Caching](#-extension:-caching)
+* [Monitoring](#-extension:-monitor-gui)
 
 ---
 
@@ -64,6 +64,7 @@ By selecting a station you get information of this very station.
 
 ## Extension: Monitor GUI
 Simple monitor GUI that allows the user to see the number of requests made so far as well as the possibility to change the cache expiration time.
+It displays a listing of the current cities in the cache.
 
 ## Extension: Caching
 Stations array from a given city is kept in cache for a defined number of seconds (10 by default). It's reduce the number of call to the JCDecaux API and improve speed.

@@ -1,11 +1,6 @@
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\bin\Debug\ClientGUI.exe.config
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\bin\Debug\ClientGUI.exe
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\bin\Debug\ClientGUI.pdb
-C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\bin\Debug\IWS_VelibWS.dll
-C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\bin\Debug\IWS_VelibWS.pdb
-C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\bin\Debug\IWS_VelibWS.dll.config
-C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.csprojResolveAssemblyReference.cache
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\MainWindow.g.cs
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\App.g.cs
@@ -18,4 +13,3 @@ C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.csproj.G
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.csproj.CoreCompileInputs.cache
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.exe
 C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.pdb
-C:\Users\Marc\source\repos\IWSLibrarySoap\ClientGUI\obj\Debug\ClientGUI.csproj.CopyComplete

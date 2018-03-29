@@ -38,6 +38,12 @@ namespace MonitorGUI.MonitorServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMonitorService/SetCacheExpirationTime", ReplyAction="http://tempuri.org/IMonitorService/SetCacheExpirationTimeResponse")]
         System.Threading.Tasks.Task<int> SetCacheExpirationTimeAsync(int seconds);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMonitorService/GetCachedCities", ReplyAction="http://tempuri.org/IMonitorService/GetCachedCitiesResponse")]
+        string[] GetCachedCities();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IMonitorService/GetCachedCities", ReplyAction="http://tempuri.org/IMonitorService/GetCachedCitiesResponse")]
+        System.Threading.Tasks.Task<string[]> GetCachedCitiesAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,6 +103,14 @@ namespace MonitorGUI.MonitorServiceReference {
         
         public System.Threading.Tasks.Task<int> SetCacheExpirationTimeAsync(int seconds) {
             return base.Channel.SetCacheExpirationTimeAsync(seconds);
+        }
+        
+        public string[] GetCachedCities() {
+            return base.Channel.GetCachedCities();
+        }
+        
+        public System.Threading.Tasks.Task<string[]> GetCachedCitiesAsync() {
+            return base.Channel.GetCachedCitiesAsync();
         }
     }
 }

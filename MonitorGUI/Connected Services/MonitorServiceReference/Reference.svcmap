@@ -25,6 +25,7 @@
     <MetadataFile FileName="MonitorService.xsd" MetadataType="Schema" ID="52149505-e812-4e63-9102-2aa9056aa3e0" SourceId="1" SourceUrl="http://localhost/MonitorService?xsd=xsd1" />
     <MetadataFile FileName="MonitorService.disco" MetadataType="Disco" ID="f38e3223-7abd-4929-96ec-a4ca0b50395d" SourceId="1" SourceUrl="http://localhost/MonitorService?disco" />
     <MetadataFile FileName="MonitorService1.xsd" MetadataType="Schema" ID="a8fa96c7-9df8-4105-a70c-ec538ed591c1" SourceId="1" SourceUrl="http://localhost/MonitorService?xsd=xsd0" />
+    <MetadataFile FileName="MonitorService2.xsd" MetadataType="Schema" ID="e41f9286-6179-4db3-9104-8a9b33f19718" SourceId="1" SourceUrl="http://localhost/MonitorService?xsd=xsd2" />
     <MetadataFile FileName="MonitorService.wsdl" MetadataType="Wsdl" ID="c9f61253-13fb-4b8c-add6-bb209c7b9d8a" SourceId="1" SourceUrl="http://localhost/MonitorService?wsdl" />
   </Metadata>
   <Extensions>

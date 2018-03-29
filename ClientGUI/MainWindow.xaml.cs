@@ -37,7 +37,7 @@ namespace ClientGUI
             {
                 return;
             }
-            intermediaryWebService.RefreshStations(CitySelection.SelectedItem.ToString().Split(',')[0]);
+            // intermediaryWebService.RefreshStations(CitySelection.SelectedItem.ToString().Split(',')[0]);
             StationName.Content = e.AddedItems[0].ToString().Split('\n')[0];
             StationDetails.Text = intermediaryWebService.GetInfoAbout(e.AddedItems[0].ToString().Split('\n')[0], CitySelection.SelectedItem.ToString().Split(',')[0]);
         }

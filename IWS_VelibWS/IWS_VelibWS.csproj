@@ -48,14 +48,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contract.cs" />
-    <Compile Include="IMonitorService.cs" />
-    <Compile Include="MonitorService.cs" />
-    <Compile Include="Station.cs" />
-    <Compile Include="IService.cs" />
+    <Compile Include="classes\Contract.cs" />
+    <Compile Include="Services\IMonitorService.cs" />
+    <Compile Include="Services\MonitorService.cs" />
+    <Compile Include="classes\Station.cs" />
+    <Compile Include="Services\IService.cs" />
     <Compile Include="example\IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service.cs" />
+    <Compile Include="Services\Service.cs" />
     <Compile Include="example\Service1.cs" />
   </ItemGroup>
   <ItemGroup>

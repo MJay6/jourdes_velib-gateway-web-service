@@ -17,6 +17,9 @@
         <Button x:Name="RefreshButton" Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,72,0,0" Click="RefreshButton_Click"/>
         <Label Content="Number of cache requests : " HorizontalAlignment="Left" Margin="292,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="NbCacheRequests" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="CacheMonitoring" HorizontalAlignment="Left" Height="185" Margin="292,107,0,0" VerticalAlignment="Top" Width="335"/>
+        <Label Content="Cities currently in the cache:" HorizontalAlignment="Left" Margin="292,76,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ErrorLabel" Content="" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Foreground="Red"/>
 
     </Grid>
 </Window>
