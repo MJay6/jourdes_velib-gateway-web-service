@@ -1,0 +1,13 @@
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\bin\Debug\EventsLibHost.exe.config
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\bin\Debug\EventsLibHost.exe
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\bin\Debug\EventsLibHost.pdb
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\bin\Debug\IWS_VelibWS.dll
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\bin\Debug\IWS_VelibWS.pdb
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\bin\Debug\IWS_VelibWS.dll.config
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\obj\Debug\EventsLibHost.csprojResolveAssemblyReference.cache
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\obj\Debug\EventsLibHost.csproj.CoreCompileInputs.cache
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\obj\Debug\EventsLibHost.csproj.CopyComplete
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\obj\Debug\EventsLibHost.exe
+C:\Users\Marc\source\repos\IWSLibrarySoap\EventsLibHost\obj\Debug\EventsLibHost.pdb

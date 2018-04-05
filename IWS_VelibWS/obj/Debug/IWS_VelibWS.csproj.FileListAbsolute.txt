@@ -3,7 +3,6 @@ C:\Users\Marc\source\repos\IWSLibrarySoap\IWS_VelibWS\bin\Debug\IWS_VelibWS.dll
 C:\Users\Marc\source\repos\IWSLibrarySoap\IWS_VelibWS\bin\Debug\IWS_VelibWS.pdb
 C:\Users\Marc\source\repos\IWSLibrarySoap\IWS_VelibWS\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Marc\source\repos\IWSLibrarySoap\IWS_VelibWS\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Marc\source\repos\IWSLibrarySoap\IWS_VelibWS\obj\Debug\IWS_VelibWS.csprojResolveAssemblyReference.cache
 C:\Users\Marc\source\repos\IWSLibrarySoap\IWS_VelibWS\obj\Debug\IWS_VelibWS.csproj.CoreCompileInputs.cache
 C:\Users\Marc\source\repos\IWSLibrarySoap\IWS_VelibWS\obj\Debug\IWS_VelibWS.dll
 C:\Users\Marc\source\repos\IWSLibrarySoap\IWS_VelibWS\obj\Debug\IWS_VelibWS.pdb

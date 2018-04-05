@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorGUI", "MonitorGUI\Mo
 		{2768F5E2-AB8B-4CFC-BAD8-75B801A3BD10} = {2768F5E2-AB8B-4CFC-BAD8-75B801A3BD10}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsLibHost", "EventsLibHost\EventsLibHost.csproj", "{2A31BA97-9A5F-4997-9E40-615E46C95CB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AD548FD6-9F06-4367-B58A-1B14C92607FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD548FD6-9F06-4367-B58A-1B14C92607FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD548FD6-9F06-4367-B58A-1B14C92607FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A31BA97-9A5F-4997-9E40-615E46C95CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A31BA97-9A5F-4997-9E40-615E46C95CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A31BA97-9A5F-4997-9E40-615E46C95CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A31BA97-9A5F-4997-9E40-615E46C95CB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

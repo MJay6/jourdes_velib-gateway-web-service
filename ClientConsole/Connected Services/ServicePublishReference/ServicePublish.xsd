@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9011/ServicePublish?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IWS_VelibWS" />
+  <xs:element name="GetChangesAboutStation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IWS_VelibWS" minOccurs="0" name="station" nillable="true" type="q1:Station" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/IWS_VelibWS" minOccurs="0" name="contract" nillable="true" type="q2:Contract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChangesAboutStationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubscribeNumberBikesHasChangedEvent">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubscribeNumberBikesHasChangedEventResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInfoAbout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="station" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cityName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInfoAboutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetInfoAboutResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCities">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCitiesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/IWS_VelibWS" minOccurs="0" name="GetCitiesResult" nillable="true" type="q3:ArrayOfContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cityName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/IWS_VelibWS" minOccurs="0" name="GetStationsResult" nillable="true" type="q4:ArrayOfStation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefreshStations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cityName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefreshStationsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NumberBikesHasChanged">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/IWS_VelibWS" minOccurs="0" name="station" nillable="true" type="q5:Station" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/IWS_VelibWS" minOccurs="0" name="contract" nillable="true" type="q6:Contract" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

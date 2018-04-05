@@ -1,5 +1,7 @@
-﻿using System.Windows;
+﻿using System.Media;
+using System.Windows;
 using System.Windows.Controls;
+using ClientGUI.Properties;
 using ClientGUI.ServiceReference;
 
 namespace ClientGUI
@@ -18,6 +20,10 @@ namespace ClientGUI
             {
                 CitySelection.Items.Add(contract.name + ", " + contract.country_code);
             }
+            var song = Properties.Resources.Song;
+            SoundPlayer soundPlayer = new SoundPlayer(song.ToString());
+            soundPlayer.Load();
+            soundPlayer.Play();
         }
 
         private void CitySelection_SelectionChanged(object sender, SelectionChangedEventArgs e)

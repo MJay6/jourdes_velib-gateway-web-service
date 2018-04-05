@@ -48,10 +48,13 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\Contract.cs" />
+    <Compile Include="Classes\Contract.cs" />
+    <Compile Include="IServicePublish.cs" />
+    <Compile Include="IServicePublishEvents.cs" />
+    <Compile Include="ServicePublish.cs" />
     <Compile Include="Services\IMonitorService.cs" />
     <Compile Include="Services\MonitorService.cs" />
-    <Compile Include="classes\Station.cs" />
+    <Compile Include="Classes\Station.cs" />
     <Compile Include="Services\IService.cs" />
     <Compile Include="example\IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

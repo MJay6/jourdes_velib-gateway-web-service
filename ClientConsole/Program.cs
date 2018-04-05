@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using ClientConsole.ServiceReference;
+// using ClientConsole.ServiceReference;
+
+using ClientConsole.ServicePublishReference;
+using System.ServiceModel;
 
 namespace ClientConsole
 {
@@ -8,7 +11,13 @@ namespace ClientConsole
     {
         static void Main(string[] args)
         {
-            string currentSelectedCity = "";
+            ServicePublishCallbackSink objsink = new ServicePublishCallbackSink();
+            InstanceContext instanceContext = new InstanceContext(objsink);
+            ServicePublishClient servicePublishClient = new ServicePublishClient(instanceContext);
+            servicePublishClient.SubscribeNumberBikesHasChangedEvent();
+
+            string currentSelectedCityName = "";
+            ServicePublishReference.Contract currentCity = null;
             Console.WriteLine("Bienvenue sur l'application pour se renseigner sur une station dans le monde !");
             Console.WriteLine("Pour avoir de l'aide tapez 'help'");
             Console.WriteLine("Pour quitter tapez 'exit'");
@@ -29,28 +38,40 @@ namespace ClientConsole
                 }
                 if (input.ToLower().StartsWith("city "))
                 {
-                    currentSelectedCity = selectCity(input.Split(' ')[1], currentSelectedCity);
+                    currentCity = selectCity(input.Split(' ')[1], currentCity);
+                    currentSelectedCityName = currentCity.name;
                 }
                 else if (input.ToLower().StartsWith("station "))
                 {
-                    selectStation(input.Split(' ')[1], currentSelectedCity);
+                    if (currentSelectedCityName.Equals(""))
+                    {
+                        Console.WriteLine("Vous n'avez pas sélectionné de ville");
+                        continue;
+                    }
+                    ServicePublishReference.Station station = selectStation(input.Split(' ')[1], currentSelectedCityName);
+                    Console.WriteLine("Station " + station.name);
+                    while(true)
+                    {
+                        // System.Threading.Thread.Sleep(2000);
+                        servicePublishClient.GetChangesAboutStation(station, currentCity);
+                        Console.ReadLine();
+                        break;
+                    }
                 }
-
             }
 
         }
 
-        private static void selectStation(string input, string currentSelectedCity)
+        private static ServicePublishReference.Station selectStation(string input, string currentSelectedCity)
         {
-            ServiceClient intermediaryWebService = new ServiceClient();
+            ServicePublishReference.Station selectedStation = null;
+            ServicePublishCallbackSink objsink = new ServicePublishCallbackSink();
+            InstanceContext instanceContext = new InstanceContext(objsink);
+            ServicePublishClient intermediaryWebService = new ServicePublishClient(instanceContext);
+
             bool found = false;
-            if (currentSelectedCity.Equals(""))
-            {
-                Console.WriteLine("Vous n'avez pas sélectionné de ville");
-                return;
-            }
-            Station[] stations = intermediaryWebService.GetStations(currentSelectedCity);
-            foreach (Station station in stations)
+            ServicePublishReference.Station[] stations = intermediaryWebService.GetStations(currentSelectedCity);
+            foreach (ServicePublishReference.Station station in stations)
             {
                 if (station.name.ToLower().Contains(input.ToLower()))
                 {
@@ -58,6 +79,7 @@ namespace ClientConsole
                     Console.WriteLine(station.name.Split('\n')[0]);
                     Console.WriteLine(currentSelectedCity);
                     Console.Write(intermediaryWebService.GetInfoAbout(station.name.Split('\n')[0], currentSelectedCity));
+                    selectedStation = station;
                     found = true;
                     break;
                 }
@@ -66,21 +88,25 @@ namespace ClientConsole
             {
                 Console.WriteLine("Aucune station trouvée pour : " + input);
             }
+            return selectedStation;
         }
 
-        private static string selectCity(string input, string currentSelectedCity)
+        private static ServicePublishReference.Contract selectCity(string input, ServicePublishReference.Contract currentSelectedCity)
         {
-            ServiceClient intermediaryWebService = new ServiceClient();
-            bool found = false;
-            string selectedCity = currentSelectedCity;
-            Contract[] cities = intermediaryWebService.GetCities();
+            ServicePublishCallbackSink objsink = new ServicePublishCallbackSink();
+            InstanceContext instanceContext = new InstanceContext(objsink);
+            ServicePublishClient intermediaryWebService = new ServicePublishClient(instanceContext);
 
-            foreach (Contract city in cities)
+            bool found = false;
+            ServicePublishReference.Contract selectedCity = currentSelectedCity;
+            ServicePublishReference.Contract[] cities = intermediaryWebService.GetCities();
+
+            foreach (ServicePublishReference.Contract city in cities)
             {
                 if (city.name.ToLower().Contains(input.ToLower()))
                 {
                     Console.WriteLine(city.name + " sélectionné.");
-                    selectedCity = city.name.Split(',')[0];
+                    selectedCity = city;
                     found = true;
                     break;
                 }
@@ -88,7 +114,7 @@ namespace ClientConsole
             if (found == false)
             {
                 Console.WriteLine("Aucune ville trouvée pour : " + input);
-                Console.WriteLine("Ville actuellement sélectionnée : " + currentSelectedCity);
+                Console.WriteLine("Ville actuellement sélectionnée : " + currentSelectedCity.name);
             }
             return selectedCity;
         }
